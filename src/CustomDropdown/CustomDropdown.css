@@ -1,0 +1,10 @@
+.dropdownContainer {
+	display: flex;
+	flex: 0.9;
+	justify-content: center;
+	height: 100%;
+}
+
+.dropdownBox {
+	width: 25em;
+}

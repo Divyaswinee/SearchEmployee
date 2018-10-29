@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex: 1;
+  background-color: #b4e8d9;
+  min-height: 100vh;
+}
+
+.selectContainer {
+  display: flex;
+  flex: 0.2;
+  align-content: center;
+  justify-content: center;
+  margin: 2em;
+  padding-top: 3em;
+}
+
+.viewContainer {
+  display: flex;
+  flex: 0.8;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

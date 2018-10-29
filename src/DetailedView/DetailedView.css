@@ -1,0 +1,11 @@
+.viewBoxStyle {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+}
+
+.topBox {
+	display: flex;
+	flex: 0.8;
+	align-content: center;
+}
