@@ -23,7 +23,6 @@ class App extends Component {
   }
 
   updateEmpIdDropdownData = (dept) => {
-    console.log('dept ===> ', dept);
     switch (dept) {
       case 'HR':
         this.setState({
@@ -55,11 +54,13 @@ class App extends Component {
   }
 
   handleClick = (clickType) => {
-    console.log('*** handleClick this.state.selectedEmpId ===> ', this.state.selectedEmpId);
     if (clickType === 'get') {
       this.props.fetchData(this.state.selectedEmpId);
     } else if (clickType === 'clear') {
       this.props.clearFetch();
+      this.setState({ 
+        selectedEmpId: ''
+      });
     }
   }
 
@@ -96,9 +97,9 @@ class App extends Component {
           />
         </div>
         <div className="viewContainer">
-          <DetailedView
+          {this.props.empDetail.id && <DetailedView
             detailData={this.props.empDetail}
-          />
+          />}
         </div>
       </div>
     );

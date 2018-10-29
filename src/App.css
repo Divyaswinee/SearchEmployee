@@ -2,6 +2,8 @@
   text-align: center;
   display: flex;
   flex: 1;
+  flex-flow: column;
+  align-items: center;
   background-color: #b4e8d9;
   min-height: 100vh;
 }
@@ -17,7 +19,8 @@
 
 .viewContainer {
   display: flex;
-  flex: 0.8;
+  width: 30em;
+  height: 30em;
 }
 
 @keyframes App-logo-spin {

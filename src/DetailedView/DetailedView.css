@@ -1,11 +1,20 @@
 .viewBoxStyle {
 	display: flex;
-	flex: 1;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .topBox {
 	display: flex;
-	flex: 0.8;
-	align-content: center;
+	flex: 0.9;
+}
+
+.bottomBox {
+	display: flex;
+	flex: 0.1;
+	justify-content: space-between;
+}
+
+.imgStyle {
+	height: 100%;
+	flex: 1;
 }

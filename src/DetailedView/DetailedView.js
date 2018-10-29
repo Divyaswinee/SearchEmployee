@@ -12,13 +12,14 @@ class DetailedView extends Component {
 	}
 	render() {
 		const { detailData } = this.props;
-		console.log('$$$ detailData ====> ', detailData.avatar);
 		return (
 			<div className="viewBoxStyle">
 				<div className="topBox">
 					<img src={detailData.avatar} alt='' className='imgStyle'/>
 				</div>
-				<div>
+				<div className="bottomBox">
+					<span>ID: {detailData.id}</span>
+					<span>NAME: {detailData.first_name} {detailData.last_name}</span>
 				</div>
 			</div>
 		);	

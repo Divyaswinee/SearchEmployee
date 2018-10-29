@@ -32,7 +32,7 @@ export default function EmpDetailReducer(state = initialState, action) {
       };
     case CLEAR_FETCH:
       return {
-        empDetail: state.empDetail
+        empDetail: initialState.empDetail
       };
     default:
       return state;
